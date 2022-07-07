@@ -1,0 +1,20 @@
+{
+  "name": "@akocan98/out-click-for-tailwind",
+  "version": "1.0.0",
+  "description": "Utility classes for 'out-click' effect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tailwind",
+    "out-click",
+    "utility",
+    "click animation"
+  ],
+  "author": "Amer Kočan",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.5"
+  }
+}
