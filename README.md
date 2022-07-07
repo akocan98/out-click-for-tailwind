@@ -54,10 +54,16 @@ const outClick = require('@akocan98/tailwind-out-click');
 
 module.exports = {
     theme: {
-        outClick: {
-            999: {
-                background: '333ms',
-                outline: '666ms',
+        extend: {
+            outClick: {
+                999: {
+                    background: '333ms',
+                    outline: '666ms',
+                },
+                123: {
+                    background: '123ms',
+                    outline: '321ms',
+                }
             }
         }
     },
@@ -66,15 +72,18 @@ module.exports = {
 }
 ```
 
-this will generate an additional utility class:
+this will generate an additional utility classes:
 
 ```html
 <div class="out-click-999">
     Hello, world
 </div>
+<div class="out-click-321">
+    Hello, world
+</div>
 ```
 
-### As expected, you can use the utility class in your CSS
+### As expected, you can use all of the generated utility classes in your CSS as well
 
 ```scss
 // ...
