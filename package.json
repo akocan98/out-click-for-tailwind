@@ -1,6 +1,6 @@
 {
   "name": "@akocan98/out-click-for-tailwind",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utility classes for 'out-click' effect",
   "main": "index.js",
   "scripts": {
