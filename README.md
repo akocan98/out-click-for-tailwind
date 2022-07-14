@@ -2,7 +2,7 @@
 
 This is a plugin for Tailwind which introduces a configurable 'out-click' animation.
 
-It's really difficult to neatly specify different duration timings for different CSS properties with Tailwind, so I made this plugin.
+It's really difficult to neatly specify different duration timings for different CSS properties with Tailwind, but that's what is needed for this effect. Instead of adding custom CSS to the project I decided to wrap this into a plugin so that you can rely on Tailwind to purge out unused classes, easily extend them and benefit from all the support Tailwind has integrated into most IDE's.
 
 This is the what the effect looks like:
 
@@ -13,7 +13,7 @@ This is the what the effect looks like:
 ### Include the plugin in `tailwind.config.js`
 
 ```js
-const outclick = require('@akocan98/tailwind-out-click');
+const outclick = require('@akocan98/out-click-for-tailwind');
 
 module.exports = {
     // ...
@@ -50,7 +50,7 @@ An example of this:
 You can add additional variations to specify your own transition durations. They are specified in `tailwind.config.js`, as such:
 
 ```js
-const outClick = require('@akocan98/tailwind-out-click');
+const outClick = require('@akocan98/out-click-for-tailwind');
 
 module.exports = {
     theme: {
@@ -72,7 +72,7 @@ module.exports = {
 }
 ```
 
-this will generate an additional utility classes:
+this will generate additional utility classes (if they are also used in your markup):
 
 ```html
 <div class="out-click-999">
@@ -97,9 +97,7 @@ this will generate an additional utility classes:
 // ...
 ```
 
-### Example of different colours for light and dark mode
-
-Example of combining:
+### Example of different colours for light and dark mode:
 
 ```html
 <div class="out-click-200 active:bg-red-400/10 active:outline-red-400/10 dark:active:bg-purple-400/10 dark:active:outline-purple-400/10">
